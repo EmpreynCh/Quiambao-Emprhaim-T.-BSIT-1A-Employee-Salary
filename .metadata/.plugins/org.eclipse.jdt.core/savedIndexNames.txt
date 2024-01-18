@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+C:\Users\Emprhaim Quiambao\Desktop\Quiambao Emprhaim T. BSIT 1A\.metadata\.plugins\org.eclipse.jdt.core
+4058648716.index
+742696870.index
+1865797976.index

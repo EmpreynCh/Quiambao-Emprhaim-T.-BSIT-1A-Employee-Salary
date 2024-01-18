@@ -1,0 +1,244 @@
+package Salary;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Font;
+import java.awt.Toolkit;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+
+import javax.swing.*;
+public class UI {
+   {
+
+	   
+		// JFrame
+		
+				JFrame frame = new JFrame();
+				 
+				Toolkit toolkit = frame.getToolkit();
+				Dimension dimension1 = toolkit.getScreenSize();
+
+				JButton button1 = new JButton();
+				
+				
+				
+				JLabel label1 = new JLabel();
+				JLabel label2 = new JLabel();
+				JLabel label3 = new JLabel();
+				JLabel label4 = new JLabel();
+				JLabel label5 = new JLabel();
+				JLabel label6 = new JLabel();
+				JLabel label7 = new JLabel();
+				JLabel label8 = new JLabel();
+				JLabel label9 = new JLabel();
+				JLabel label10 = new JLabel();
+				JLabel label11 = new JLabel();
+				JLabel label12 = new JLabel();
+				JLabel label13 = new JLabel();
+				JLabel label14 = new JLabel();
+				JLabel label15 = new JLabel();
+				JLabel label16 = new JLabel();
+				JLabel label17 = new JLabel();
+				JLabel label18 = new JLabel();
+				JLabel label19 = new JLabel();
+				JLabel label20 = new JLabel();
+				JLabel label21 = new JLabel();
+				
+				
+				JTextField text1 = new JTextField();
+				JTextField text2 = new JTextField();
+				JTextField text3 = new JTextField();
+				JTextField text4 = new JTextField();
+				JTextField text5 = new JTextField();
+				JTextField text6 = new JTextField();
+				JTextField text7 = new JTextField();
+				JTextField text8 = new JTextField();
+				JTextField text9 = new JTextField();
+				JTextField text10 = new JTextField();
+				JTextField text11 = new JTextField();
+				JTextField text12 = new JTextField();
+				JTextField text13 = new JTextField();
+				JTextField text14 = new JTextField();
+				JTextField text15 = new JTextField();
+				JTextField text16 = new JTextField();
+				JTextField text17 = new JTextField();
+				JTextField text18 = new JTextField();
+				JTextField text19 = new JTextField();
+				JTextField text20 = new JTextField();
+				JTextField text21 = new JTextField();
+				JTextField text22 = new JTextField();
+				JTextField text23 = new JTextField();
+				JTextField text24 = new JTextField();
+				JTextField text25 = new JTextField();
+				JTextField text26 = new JTextField();
+				JTextField text27 = new JTextField();
+				JTextField text28 = new JTextField();
+				
+				frame.setSize(1200,850);
+				frame.setTitle("Salary");
+				frame.setLocation(dimension1.width/2 - frame.getWidth()/2,dimension1.height/2 - frame.getHeight()/2);
+				frame.setResizable(false);
+				frame.setVisible(true);
+				frame.getContentPane().setBackground(new Color(102,178,255));
+				
+				
+				
+				label20.setText("Employee Details");
+				label20.setFont(new Font("Arial Black",Font.BOLD,24));
+				label20.setBounds(150,130,150,40);
+				label20.setForeground(Color.black);
+				label1.setText("Employee Name");
+				label1.setFont(new Font("Century Gothic",Font.BOLD,16));
+				label1.setBounds(150,220,150,40);
+				label1.setForeground(Color.white);	
+		        label2.setText("Employee ID");
+				label2.setFont(new Font("Century Gothic",Font.BOLD,16));
+				label2.setBounds(150,320,120,40);
+				label2.setForeground(Color.white);
+				label3.setText("Working Hours");
+				label3.setFont(new Font("Century Gothic",Font.BOLD,16));
+				label3.setBounds(150,420,120,40);
+				label3.setForeground(Color.white);	
+				label4.setText("Overtime");
+				label4.setFont(new Font("Century Gothic",Font.BOLD,16));
+				label4.setBounds(170,520,120,40);
+				label4.setForeground(Color.white);	
+				label5.setText("Rate");
+				label5.setFont(new Font("Century Gothic",Font.BOLD,16));
+				label5.setBounds(180,620,120,40);
+				label5.setForeground(Color.white);
+				
+				
+				label6.setText("Salary Details");
+				label6.setFont(new Font("Arial Black",Font.BOLD,25));
+				label6.setBounds(550,130,120,40);
+			    label6.setForeground(Color.black);
+				label7.setText("Employee Name");
+				label7.setFont(new Font("Century Gothic",Font.BOLD,16));
+				label7.setBounds(570,220,120,40);
+				label7.setForeground(Color.white);
+				label8.setText("Employee ID");
+				label8.setFont(new Font("Century Gothic",Font.BOLD,16));
+				label8.setBounds(570,320,120,40);
+				label8.setForeground(Color.white);	
+				label9.setText("Working Hours");
+				label9.setFont(new Font("Century Gothic",Font.BOLD,16));
+				label9.setBounds(570,420,120,40);
+				label9.setForeground(Color.white);	
+				label10.setText("Overtime");
+				label10.setFont(new Font("Century Gothic",Font.BOLD,16));
+				label10.setBounds(570,520,120,40);
+				label10.setForeground(Color.white);	
+			    label11.setText("Rate");
+				label11.setFont(new Font("Century Gothic",Font.BOLD,16));
+				label11.setBounds(590,620,120,40);
+				label11.setForeground(Color.white);	
+				label12.setText("Gross Pay");
+				label12.setFont(new Font("Century Tuna",Font.BOLD,16));
+				label12.setBounds(570,720,120,40);
+				label12.setForeground(Color.white);
+				
+				
+				
+				
+				
+				label13.setText("Deduction);
+				label13.setFont(new Font("Arial Black",Font.BOLD,24));
+				label13.setBounds(930,130,120,40);
+				label13.setForeground(Color.black);
+				label15.setText("SSS");
+				label15.setFont(new Font("Century Gothic",Font.BOLD,16));
+				label15.setBounds(1000,220,120,40);
+				label15.setForeground(Color.white);
+				label21.setText("Philhealth");
+				label21.setFont(new Font("Century Gothic",Font.BOLD,16));
+				label21.setBounds(970,320,120,40);
+				label21.setForeground(Color.white);
+				label16.setText("Pag-ibig");
+				label16.setFont(new Font("Century Gothic",Font.BOLD,16));
+				label16.setBounds(970,420,120,40);
+				label16.setForeground(Color.white);
+				label17.setText("Tax");
+				label17.setFont(new Font("Century Gothic",Font.BOLD,16));
+				label17.setBounds(990,520,120,40);
+				label17.setForeground(Color.white);			
+				label18.setText("Total");
+				label18.setFont(new Font("Century Gothic",Font.BOLD,16));
+				label18.setBounds(990,620,120,40);	
+			    label18.setForeground(Color.white);	
+			    
+			    
+			    
+			    
+				text1.setBounds(80,190,240,40);
+				text2.setBounds(80,290,240,40);
+				text3.setBounds(80,390,240,40);
+				text4.setBounds(80,490,240,40);
+				text5.setBounds(80,590,240,40);
+				text6.setBounds(500,190,240,40);
+				text7.setBounds(500,290,240,40);
+				text8.setBounds(500,390,240,40);
+				text9.setBounds(500,490,240,40);
+				text10.setBounds(500,590,240,40);
+				text11.setBounds(500,690,240,40);	
+				text12.setBounds(890,190,240,40);
+				text13.setBounds(890,290,240,40);
+				text14.setBounds(890,390,240,40);
+				text15.setBounds(890,490,240,40);
+				text16.setBounds(890,590,240,40);
+				button1.setBounds(120,700,150,40);
+				button1.setText("COMPUTE");
+				button1.setForeground(Color.BLUE);
+	            
+				
+				
+				
+				frame.add(label1);
+	            frame.add(label2);
+	            frame.add(label3);
+	            frame.add(label4);
+	            frame.add(label5);
+	            frame.add(label6);
+	            frame.add(label7);
+	            frame.add(label8);
+	            frame.add(label9);
+	            frame.add(label10);
+	            frame.add(label11);
+	            frame.add(label12);
+	            frame.add(label13);
+	            frame.add(label14);
+	            frame.add(label15);
+	            frame.add(label16);
+	            frame.add(label17);
+	            frame.add(label18);
+	            frame.add(label19);
+	            frame.add(label20);
+	            frame.add(label21);  
+	            frame.add(text1);
+	            frame.add(text2);
+	            frame.add(text3);
+	            frame.add(text4);
+	            frame.add(text5);
+	            frame.add(text6);
+	            frame.add(text7);
+	            frame.add(text8);
+	            frame.add(text9);
+	            frame.add(text10);
+	            frame.add(text11);
+	            frame.add(text12);
+	            frame.add(text13);
+	            frame.add(text14);
+	            frame.add(text15);
+	            frame.add(text16);
+	            frame.add(button1);
+	            frame.setLayout(null);
+	            frame.setVisible(true);
+	       
+	}
+	
+
+
+}

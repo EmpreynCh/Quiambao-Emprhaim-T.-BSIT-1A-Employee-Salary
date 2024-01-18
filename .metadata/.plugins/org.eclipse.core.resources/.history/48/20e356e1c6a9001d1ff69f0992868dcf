@@ -1,0 +1,316 @@
+package Salary;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Font;
+import java.awt.Toolkit;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+
+import javax.swing.ImageIcon;
+public class UI extends JFrame implements ActionListener{
+	
+	JTextField t1 = new JTextField(); JTextField t11 = new JTextField(); JTextField t21 = new JTextField();
+	JTextField t2 = new JTextField(); JTextField t12 = new JTextField();
+	JTextField t3 = new JTextField(); JTextField t13 = new JTextField();
+	JTextField t4 = new JTextField(); JTextField t14 = new JTextField();
+	JTextField t5 = new JTextField(); JTextField t15 = new JTextField();
+	JTextField t6 = new JTextField(); JTextField t16 = new JTextField();
+	JTextField t7 = new JTextField(); JTextField t17 = new JTextField();
+	JTextField t8 = new JTextField(); JTextField t18 = new JTextField();
+	JTextField t9 = new JTextField(); JTextField t19 = new JTextField();
+	JTextField t10 = new JTextField(); JTextField t20 = new JTextField();
+	JButton button1 = new JButton(); JButton button2 = new JButton();
+		
+	UI(){
+		
+		
+		JFrame UI = new JFrame();
+		
+		Toolkit toolkit = this.getToolkit();
+		Dimension d1 = toolkit.getScreenSize();
+		
+		
+		this.setSize(1250, 850);
+		this.setTitle("The Basic Salary of Employee");
+		this.setLocation(d1.width/2 - this.getWidth()/2, d1.height/2 - this.getHeight()/2);
+		this.getContentPane().setBackground(new Color(102,178,255));
+		
+		
+		ImageIcon image = new ImageIcon("Creeper.png");
+		this.setIconImage(image.getImage());
+        
+		
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.setVisible(false);
+		
+		
+		JLabel L1 = new JLabel(); JLabel L11 = new JLabel(); JLabel L21 = new JLabel();
+		JLabel L2 = new JLabel(); JLabel L12 = new JLabel(); JLabel L22 = new JLabel();
+		JLabel L3 = new JLabel(); JLabel L13 = new JLabel(); JLabel L23 = new JLabel();
+		JLabel L4 = new JLabel(); JLabel L14 = new JLabel(); JLabel L24 = new JLabel();
+		JLabel L5 = new JLabel(); JLabel L15 = new JLabel(); JLabel L25 = new JLabel();
+		JLabel L6 = new JLabel(); JLabel L16 = new JLabel(); JLabel L26 = new JLabel();
+		JLabel L7 = new JLabel(); JLabel L17 = new JLabel();
+		JLabel L8 = new JLabel(); JLabel L18 = new JLabel();
+		JLabel L9 = new JLabel(); JLabel L19 = new JLabel();
+		JLabel L10 = new JLabel(); JLabel L20 = new JLabel();
+		
+		
+		L1.setText("Employee Name");
+		L1.setFont(new Font("Century Gothic",Font.PLAIN,20));
+	    L1.setBounds(120,180,300,40);
+		L1.setForeground(Color.black);
+		
+		L2.setText("Employee ID");
+		L2.setFont(new Font("Century Gothic",Font.PLAIN,20));
+		L2.setBounds(130,250,300,40);
+		L2.setForeground(Color.black);
+		
+		L3.setText("Position");
+		L3.setFont(new Font("Century Gothic",Font.PLAIN,20));
+		L3.setBounds(150,320,150,40);
+		L3.setForeground(Color.black);
+		
+		L4.setText("Designation");
+		L4.setFont(new Font("Century Gothic",Font.PLAIN,20));
+		L4.setBounds(140,390,150,40);
+		L4.setForeground(Color.black);
+		
+		L5.setText("Working Hours");
+		L5.setFont(new Font("Century Gothic",Font.PLAIN,20));
+		L5.setBounds(130,460,150,40);
+		L5.setForeground(Color.black);
+		
+		L6.setText("Rate");
+		L6.setFont(new Font("Century Gothic",Font.PLAIN,20));
+		L6.setBounds(170,530,150,40);
+		L6.setForeground(Color.black);
+		
+		L7.setText("Overtime");
+		L7.setFont(new Font("Century Gothic",Font.PLAIN,20));
+	    L7.setBounds(150,600,150,40);
+		L7.setForeground(Color.black);
+		
+		L8.setText("Salary Details");
+		L8.setFont(new Font("Century Gothic",Font.BOLD,27));
+		L8.setBounds(520,100,350,40);
+		L8.setForeground(Color.black);
+		
+		L9.setText("Employee Name");
+		L9.setFont(new Font("Century Gothic",Font.PLAIN,20));
+		L9.setBounds(540,180,300,40);
+		L9.setForeground(Color.black);
+		
+		L10.setText("Employee ID: ");
+		L10.setFont(new Font("Century Gothic",Font.PLAIN,20));
+		L10.setBounds(550,250,300,40);
+		L10.setForeground(Color.black);
+		
+		L11.setText("Position");
+		L11.setFont(new Font("Century Gothic",Font.PLAIN,20));
+		L11.setBounds(570,320,150,40);
+		L11.setForeground(Color.black);
+		
+		L12.setText("Designation");
+		L12.setFont(new Font("Century Gothic",Font.PLAIN,20));
+		L12.setBounds(560,390,150,40);
+		L12.setForeground(Color.black);
+		
+		L13.setText("Working Hours");
+		L13.setFont(new Font("Century Gothic",Font.PLAIN,20));
+		L13.setBounds(550,460,150,40);
+		L13.setForeground(Color.black);
+		
+		L14.setText("Rate");
+		L14.setFont(new Font("Century Gothic",Font.PLAIN,20));
+		L14.setBounds(590,530,150,40);
+		L14.setForeground(Color.black);
+		
+		L15.setText("Overtime");
+		L15.setFont(new Font("Century Gothic",Font.PLAIN,20));
+		L15.setBounds(570,600,150,40);
+		L15.setForeground(Color.black);
+		
+		L16.setText("Gross Pay");
+		L16.setFont(new Font("Century Gothic",Font.BOLD,22));
+		L16.setBounds(560,680,150,40);
+		L16.setForeground(Color.black);
+		
+		L17.setText("Deductions");
+		L17.setFont(new Font("Century Gothic",Font.BOLD,27));
+		L17.setBounds(930,100,350,40);
+		L17.setForeground(Color.black);
+		
+		L18.setText("SSS");
+		L18.setFont(new Font("Century Gothic",Font.PLAIN,20));
+		L18.setBounds(990,180,120,40);
+		L18.setForeground(Color.black);
+		
+		L19.setText("PhilHealth:");
+		L19.setFont(new Font("Century Gothic",Font.PLAIN,20));
+		L19.setBounds(990,250,120,40);
+		L19.setForeground(Color.black);
+		
+		L20.setText("Pag-ibig");
+		L20.setFont(new Font("Century Gothic",Font.PLAIN,20));
+		L20.setBounds(990,320,120,40);
+		L20.setForeground(Color.black);
+
+		L21.setText("Tax");
+		L21.setFont(new Font("Century Gothic",Font.PLAIN,20));
+		L21.setBounds(990,390,120,40);
+		L21.setForeground(Color.black);
+		
+	    L22.setText("Total");
+		L22.setFont(new Font("Century Gothic",Font.PLAIN,20));
+		L22.setBounds(990,460,120,40);
+		L22.setForeground(Color.black);
+		
+		L23.setText("Net Pay:");
+		L23.setFont(new Font("Century Gothic",Font.PLAIN,22));
+		L23.setBounds(990,530,120,40);
+		L23.setForeground(Color.black);
+		
+		
+		L24.setText("EMPLOYEE SALARY");
+		L24.setFont(new Font("Century Gothic",Font.BOLD,50));
+		L24.setBounds(450,20,650,40);
+		L24.setForeground(Color.black);
+		
+		L25.setText("Hi Emprhaim Quiambao!");
+		L25.setFont(new Font("Century Gothic",Font.BOLD,20));
+		L25.setBounds(500,60,650,40);
+		L25.setForeground(Color.black);
+		
+		L26.setText("Employee Details");
+		L26.setFont(new Font("Century Gothic",Font.BOLD,27));
+		L26.setBounds(80,100,350,40);
+		L26.setForeground(Color.black);
+		
+		
+		//text position
+		t1.setBounds(80,150,240,40);	t8.setBounds(500,150,240,40);	t16.setBounds(890,150,240,40);
+		t2.setBounds(80,220,240,40);	t9.setBounds(500,220,240,40);   t17.setBounds(890,220,240,40);
+		t3.setBounds(80,290,240,40);    t10.setBounds(500,290,240,40);  t18.setBounds(890,290,240,40);
+		t4.setBounds(80,360,240,40);    t11.setBounds(500,360,240,40);  t19.setBounds(890,360,240,40);
+		t5.setBounds(80,430,240,40);    t12.setBounds(500,430,240,40);  t20.setBounds(890,430,240,40);
+		t6.setBounds(80,500,240,40);    t13.setBounds(500,500,240,40);  t21.setBounds(890,500,240,40);
+		t7.setBounds(80,570,240,40);    t14.setBounds(500,570,240,40);
+		                                t15.setBounds(500,640,240,40);
+			
+		t8.setEditable(false); t16.setEditable(false);
+	    t9.setEditable(false); t17.setEditable(false);
+		t10.setEditable(false); t18.setEditable(false);
+	    t11.setEditable(false); t19.setEditable(false);
+	    t12.setEditable(false); t20.setEditable(false);
+		t13.setEditable(false); t21.setEditable(false);
+		t14.setEditable(false);
+		t15.setEditable(false);
+		
+			
+			
+		
+		//button
+		this.add(button1);
+		button1.setBounds(120,700, 150, 40);
+		button1.setText("COMPUTE");
+		button1.setFont(new Font("Georgia", Font.PLAIN,20));
+		button1.addActionListener(this);
+		button1.setFocusable(false);
+		
+		
+		this.add(L1); this.add(L8); this.add(L17);
+		this.add(L2); this.add(L9); this.add(L18); 
+		this.add(L3); this.add(L10); this.add(L19);
+		this.add(L4); this.add(L11); this.add(L20);
+		this.add(L5); this.add(L12); this.add(L21);
+		this.add(L6); this.add(L13); this.add(L22);
+		this.add(L7); this.add(L14); this.add(L23);
+		this.add(L26); this.add(L15); this.add(L24);
+		              this.add(L16); this.add(L25);
+		
+		
+		
+		this.add(t1);this.add(t11);this.add(t21);
+		this.add(t2);this.add(t12);
+		this.add(t3);this.add(t13);
+		this.add(t4);this.add(t14);
+		this.add(t5);this.add(t15);
+		this.add(t6);this.add(t16);
+		this.add(t7);this.add(t17);
+		this.add(t8);this.add(t18);
+		this.add(t9);this.add(t19);
+		this.add(t10);this.add(t20);
+		
+		this.setLayout(null);
+		this.setVisible(true);
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+		
+		if(e.getSource() == button1) {
+			
+			double output1, output2, output3, output4, GrossPay, SSS, PhilHealth, Pagibig, Tax, Total, Insert;
+		 
+			output1 = Double.parseDouble(t4.getText());
+			output2 = Double.parseDouble(t5.getText());
+			output3 = Double.parseDouble(t6.getText());
+			output4 = Double.parseDouble(t7.getText());
+						
+				t8.setText(t1.getText());
+				t9.setText(t2.getText());
+				t10.setText(t3.getText());
+				t11.setText(t4.getText());
+				t12.setText(t5.getText());
+				t13.setText(t6.getText());
+				t14.setText(t7.getText());
+                     
+				     GrossPay = output1 * (output2 *(output3 + output4));
+					  SSS = GrossPay * .5; 
+					  PhilHealth = GrossPay * .10;
+					  Pagibig =GrossPay * .25;
+					  Tax = GrossPay * .50;
+					  Total = SSS + PhilHealth+ Pagibig + Tax;
+					  Insert = GrossPay - Total;
+               	
+					  t15.setText(String.valueOf(String.format("%.2f",GrossPay)));
+				      t16.setText(String.valueOf(String.format("%.2f",SSS)));
+				      t17.setText(String.valueOf(String.format("%.2f",PhilHealth)));
+				      t18.setText(String.valueOf(String.format("%.2f",Pagibig)));
+				      t19.setText(String.valueOf(String.format("%.2f",Tax)));
+				      t20.setText(String.valueOf(String.format("%.2f",Total)));
+				      t21.setText(String.valueOf(String.format("%.2f",Insert)));
+				
+		}		
+			else if (e.getSource() == button2) {
+			
+					t1.setText("");t2.setText("");t3.setText("");t4.setText("0");t5.setText("0");t6.setText("0");t7.setText("0");
+					t8.setText("");t9.setText("");t10.setText("");t11.setText("");t12.setText("");t13.setText("");t14.setText("");			
+					t15.setText("");t16.setText("");t17.setText("");t18.setText("");t19.setText("");t20.setText("");t21.setText("");
+		}
+	}
+}
+
+		
+
+
+							
+
+			
+			
+			
+
+   
+			
+			
+
+
+
+		
